@@ -121,40 +121,6 @@ export const PROJECTS: ProjectItemProps[] = [
   },
   {
     description:
-      "Esse é um projecto que consiste em uma aplicação web capaz de gerar horários automáticos de uma determinada instituição, tanto escolar como corporativa.",
-    projectName: "schedule generator",
-    projectDisplayName: "Gerador de Horários Automáticos",
-    linkRepo: "https://github.com/MauroTwister475/SG",
-    projectImage: sg,
-    techs: [
-      {
-        tech: "NextJs",
-      },
-      {
-        tech: "TypeScript",
-      },
-      {
-        tech: "Tailwind",
-      },
-      {
-        tech: "Shadcn-ui",
-      },
-      {
-        tech: "NodeJs",
-      },
-      {
-        tech: "ExpressJs",
-      },
-      {
-        tech: "TypeORM",
-      },
-      {
-        tech: "Zustand",
-      },
-    ],
-  },
-  {
-    description:
       "Esse é um projecto que consiste em um Teste que me foi imposto para poder provar os meus conhecimento sobre front-end, consumo de APIs e uso de libs de terceiros.",
     projectName: "test-next",
     projectDisplayName: "Teste Front-end Next.js",
