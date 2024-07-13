@@ -6,6 +6,7 @@ import Task from "@/assets/task.png";
 import Porti from "@/assets/porti.png";
 import Inbox from "@/assets/inbox.png";
 import IItech from "@/assets/iitech.png";
+import dtmoney from "@/assets/dtmoney.png";
 
 export interface ProjectItemProps {
   projectName: string;
@@ -22,6 +23,7 @@ export type ProjectTechType = {
 };
 
 export const PROJECTS: ProjectItemProps[] = [
+  
   {
     description:
       "Esse é um projecto que consiste em uma plataforma de estudos para professores e alunos que pretendem aprender mais sobre determinada disciplina.",
@@ -60,6 +62,28 @@ export const PROJECTS: ProjectItemProps[] = [
       },
       {
         tech: "Shadcn-ui",
+      },
+    ],
+  },
+  {
+    description:
+      "Esse é um projecto que consiste num desafio de front-end da Rocketseat. Construção de uma aplicação web de finanças.",
+    projectName: "dtmoney",
+    projectDisplayName: "Dt.Money",
+    linkRepo: "https://github.com/MauroTwister475/dt-money",
+    projectImage: dtmoney,
+    techs: [
+      {
+        tech: "React",
+      },
+      {
+        tech: "Nodejs",
+      },
+      {
+        tech: "SQLite",
+      },
+      {
+        tech: "TypeScript",
       },
     ],
   },

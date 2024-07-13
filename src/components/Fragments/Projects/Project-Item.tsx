@@ -6,7 +6,7 @@ import { ProjectItemProps } from "./projects";
 
 export function ProjectItem(props: ProjectItemProps) {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 pb-10">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 pb-10 border-b border-zinc-800">
       <motion.div
         initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
