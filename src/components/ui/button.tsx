@@ -2,13 +2,15 @@ import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 const buttonVariants = cva(
   "inline-flex items-center space-x-2 justify-center rounded-md text-sm font-medium transition-all ",
   {
     variants: {
       variant: {
-        default: "w-full md:w-max lg:w-max bg-blue-700 text-white hover:bg-blue-800",
+        default:
+          "w-full md:w-max lg:w-max bg-blue-700 text-white hover:bg-blue-800",
         destructive:
           "bg-red-500 text-zinc-50 hover:bg-red-500/90  dark:text-zinc-50 dark:hover:bg-red-900/90",
         outline:
@@ -44,14 +46,16 @@ export interface ButtonProps
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, title, Icon, ...props }, ref) => {
     return (
-      <button
-        className={cn(buttonVariants({ variant, size, className }))}
-        ref={ref}
-        {...props}
-      >
-        {title && <span className="font-medium">{title}</span>}
-        {Icon && <Icon size={18} />}
-      </button>
+      <Link href="https://github.com/MauroTwister475">
+        <button
+          className={cn(buttonVariants({ variant, size, className }))}
+          ref={ref}
+          {...props}
+        >
+          {title && <span className="font-medium">{title}</span>}
+          {Icon && <Icon size={18} />}
+        </button>
+      </Link>
     );
   }
 );
