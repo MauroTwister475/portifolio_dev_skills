@@ -7,6 +7,7 @@ import Porti from "@/assets/porti.png";
 import Inbox from "@/assets/inbox.png";
 import IItech from "@/assets/iitech.png";
 import dtmoney from "@/assets/dtmoney.png";
+import portiWeb from "@/assets/portiWeb.png";
 
 export interface ProjectItemProps {
   projectName: string;
@@ -23,13 +24,12 @@ export type ProjectTechType = {
 };
 
 export const PROJECTS: ProjectItemProps[] = [
-  
   {
     description:
       "Esse é um projecto que consiste em uma plataforma de estudos para professores e alunos que pretendem aprender mais sobre determinada disciplina.",
     projectName: "proffy",
     projectDisplayName: "Proffy",
-    linkRepo: "https://github.com/MauroTwister475/project",
+    linkRepo: "https://github.com/MauroTwister475/ProffyReactJS",
     projectImage: Proffy,
     techs: [
       {
@@ -44,6 +44,31 @@ export const PROJECTS: ProjectItemProps[] = [
       {
         tech: "TypeScript",
       },
+      {
+        tech: "React Router Dom",
+      },
+    ],
+  },
+  {
+    description:
+      "Esse é um projecto que consiste no meu próprio portifólio, com o objectivo de mostrar as minhas habilidades e projectos. Se estás a ver esse projecto é porque nesse momento estás no próprio portifólio",
+    projectName: "proffy",
+    projectDisplayName: "Portfólio Pessoal",
+    linkRepo: "https://github.com/MauroTwister475/portifolio_dev_skills",
+    projectImage: portiWeb,
+    techs: [
+      {
+        tech: "Next.js",
+      },
+      {
+        tech: "TypeScript",
+      },
+      {
+        tech: "Framer-motion",
+      },
+      {
+        tech: "Tailwind",
+      },
     ],
   },
   {
@@ -51,7 +76,7 @@ export const PROJECTS: ProjectItemProps[] = [
       "Esse é um projecto que consiste na Landing Page da IItech, empresa de serviços de Informática. É um Demo para analise.",
     projectName: "proffy",
     projectDisplayName: "Landing Page da IItech",
-    linkRepo: "https://github.com/MauroTwister475/project",
+    linkRepo: "https://github.com/MauroTwister475/iitech-landing-page",
     projectImage: IItech,
     techs: [
       {
@@ -62,6 +87,12 @@ export const PROJECTS: ProjectItemProps[] = [
       },
       {
         tech: "Shadcn-ui",
+      },
+      {
+        tech: "Tailwind",
+      },
+      {
+        tech: "Framer-motion",
       },
     ],
   },
@@ -77,13 +108,10 @@ export const PROJECTS: ProjectItemProps[] = [
         tech: "React",
       },
       {
-        tech: "Nodejs",
-      },
-      {
-        tech: "SQLite",
-      },
-      {
         tech: "TypeScript",
+      },
+      {
+        tech: "Headeless-UI",
       },
     ],
   },
@@ -92,11 +120,17 @@ export const PROJECTS: ProjectItemProps[] = [
       "Esse é um projecto que consiste em um Teste que me foi imposto para poder provar os meus conhecimento sobre front-end, consumo de APIs e uso de libs de terceiros.",
     projectName: "test-next",
     projectDisplayName: "Teste Front-end Next.js",
-    linkRepo: "https://github.com/MauroTwister475/project",
+    linkRepo: "https://github.com/MauroTwister475/test-front-end-NextJS",
     projectImage: Test,
     techs: [
       {
         tech: "Nextjs",
+      },
+      {
+        tech: "TypeScript",
+      },
+      {
+        tech: "Tailwind",
       },
       {
         tech: "Shadcn-ui",
@@ -109,9 +143,9 @@ export const PROJECTS: ProjectItemProps[] = [
   {
     description:
       "Esse é um projecto que consiste num gerenciador de Tarefas. Com diversas funcionalidades como adicionar tarefa, editar, excluir, filtrar e com uma gama de personalização das mesmas.",
-    projectName: "test-next",
+    projectName: "task manage",
     projectDisplayName: "Gerenciador de Tarefas",
-    linkRepo: "https://github.com/MauroTwister475/project",
+    linkRepo: "https://github.com/MauroTwister475/taskApp",
     projectImage: Task,
     isMobile: true,
     techs: [
@@ -125,6 +159,9 @@ export const PROJECTS: ProjectItemProps[] = [
         tech: "SQLite",
       },
       {
+        tech: "Nativewind",
+      },
+      {
         tech: "Zustand",
       },
     ],
@@ -132,9 +169,9 @@ export const PROJECTS: ProjectItemProps[] = [
   {
     description:
       "Esse é um projecto em que fiz o meu perfil mobile. Simples mas intuitivo. Organização simples das informações.",
-    projectName: "test-next",
+    projectName: "mobile profile",
     projectDisplayName: "Perfil Mobile",
-    linkRepo: "https://github.com/MauroTwister475/project",
+    linkRepo: "https://github.com/MauroTwister475/my-profile",
     projectImage: Porti,
     isMobile: true,
     techs: [
@@ -144,14 +181,17 @@ export const PROJECTS: ProjectItemProps[] = [
       {
         tech: "Expo",
       },
+      {
+        tech: "Nativewind",
+      },
     ],
   },
   {
     description:
       "Esse é um projecto é o clone da Inbon do Gmail do Google. Fiz para treinar o uso de dois ou mais tipos de navegação (Tab e Drawer).",
-    projectName: "test-next",
+    projectName: "clone gmail",
     projectDisplayName: "Gmail Clone Inbox",
-    linkRepo: "https://github.com/MauroTwister475/project",
+    linkRepo: "https://github.com/MauroTwister475/gmail-clone",
     projectImage: Inbox,
     isMobile: true,
     techs: [
@@ -161,14 +201,17 @@ export const PROJECTS: ProjectItemProps[] = [
       {
         tech: "Expo",
       },
+      {
+        tech: "Nativewind",
+      },
     ],
   },
   {
     description:
       "Esse é um projecto que consiste em um jogo mobile de Quiz  sobre as tecnologias JavaScript, nomeadamente React, Nodejs e React Native.",
-    projectName: "test-next",
+    projectName: "quizjs",
     projectDisplayName: "QuizJS",
-    linkRepo: "https://github.com/MauroTwister475/project",
+    linkRepo: "https://github.com/MauroTwister475/quiz-js",
     projectImage: Game,
     isMobile: true,
     techs: [
@@ -177,6 +220,9 @@ export const PROJECTS: ProjectItemProps[] = [
       },
       {
         tech: "Expo",
+      },
+      {
+        tech: "Nativewind",
       },
       {
         tech: "Zustand",
