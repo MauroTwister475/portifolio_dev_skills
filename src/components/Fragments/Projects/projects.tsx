@@ -8,6 +8,7 @@ import Inbox from "@/assets/inbox.png";
 import IItech from "@/assets/iitech.png";
 import dtmoney from "@/assets/dtmoney.png";
 import portiWeb from "@/assets/portiWeb.png";
+import sg from "@/assets/sg.jpg";
 
 export interface ProjectItemProps {
   projectName: string;
@@ -37,6 +38,9 @@ export const PROJECTS: ProjectItemProps[] = [
       },
       {
         tech: "Nodejs",
+      },
+      {
+        tech: "Prisma ORM",
       },
       {
         tech: "SQLite",
@@ -112,6 +116,40 @@ export const PROJECTS: ProjectItemProps[] = [
       },
       {
         tech: "Headeless-UI",
+      },
+    ],
+  },
+  {
+    description:
+      "Esse é um projecto que consiste em uma aplicação web capaz de gerar horários automáticos de uma determinada instituição, tanto escolar como corporativa.",
+    projectName: "schedule generator",
+    projectDisplayName: "Gerador de Horários Automáticos",
+    linkRepo: "https://github.com/MauroTwister475/SG",
+    projectImage: sg,
+    techs: [
+      {
+        tech: "NextJs",
+      },
+      {
+        tech: "TypeScript",
+      },
+      {
+        tech: "Tailwind",
+      },
+      {
+        tech: "Shadcn-ui",
+      },
+      {
+        tech: "NodeJs",
+      },
+      {
+        tech: "ExpressJs",
+      },
+      {
+        tech: "TypeORM",
+      },
+      {
+        tech: "Zustand",
       },
     ],
   },
